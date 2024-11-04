@@ -7,6 +7,12 @@ app=QtWidgets.QApplication([])
 
 #===========================================================================================
 
+class mainw():
+
+    def sair(telaPrincipal_widget, login, login_widget):
+        telaPrincipal_widget.hide()
+        login_widget.show()
+        Logon.inicializar_login(login)
 
 class Logon():
     
@@ -17,9 +23,9 @@ class Logon():
 
 
     
-    def login_Padrao(telaPrincipal_widget, login):
+    def login_Padrao(telaPrincipal_widget, telaPrincipal):
         telaPrincipal_widget.show()
-        telaPrincipal_widget.pushButton_4.setVisible(False)
+        telaPrincipal.pushButton_4.setVisible(False)
         
 
 
@@ -41,7 +47,7 @@ class Logon():
             login_widget.hide()
         else:
             login_widget.hide()
-            Logon.login_Padrao(telaPrincipal_widget, login)
+            Logon.login_Padrao(telaPrincipal_widget, telaPrincipal)
 
             
  
@@ -50,9 +56,5 @@ class Logon():
 
 
 
-class mainw():
-    def sair (telaPrincipal_widget,login):
-        login.show()
-        Logon.inicializar_login(login)
-        telaPrincipal_widget.hide()
+        
     

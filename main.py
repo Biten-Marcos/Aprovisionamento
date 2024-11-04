@@ -28,9 +28,9 @@ login.pushButton.clicked.connect(lambda:Logon.adm1(telaPrincipal, telaPrincipal_
 
 
 
-telaPrincipal.pushButton_5.clicked.connect(lambda:mainw.sair(telaPrincipal, login))
+#telaPrincipal.pushButton_5.clicked.connect(lambda:mainw.sair(telaPrincipal_widget, login_widget, login))
 
-
+telaPrincipal.pushButton_5.clicked.connect(lambda: mainw.sair(telaPrincipal_widget, login, login_widget))
 
 login_widget.show()      
 Logon.inicializar_login(login)
