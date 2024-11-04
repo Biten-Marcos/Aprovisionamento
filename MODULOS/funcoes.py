@@ -17,15 +17,15 @@ class Logon():
 
 
     
-    def login_Padrao(tela_principal, login):
-        tela_principal.show()
-        tela_principal.pushButton_4.setVisible(False)
+    def login_Padrao(telaPrincipal_widget, login):
+        telaPrincipal_widget.show()
+        telaPrincipal_widget.pushButton_4.setVisible(False)
         
 
 
 
 
-    def adm1 (tela_Principal, login):
+    def adm1 (telaPrincipal, telaPrincipal_widget, login, login_widget):
         adm = "adm"
         admsen = "adm"
         
@@ -33,15 +33,15 @@ class Logon():
         senha = login.lineEdit_2.text()
         if user == adm and senha == admsen:
             
-            tela_Principal.label_4.setText("ADM")
-            tela_Principal.label_5.setText("ADM")
-            tela_Principal.label_6.setText("ADM")
+            telaPrincipal.label_4.setText("ADM")
+            telaPrincipal.label_5.setText("ADM")
+            telaPrincipal.label_6.setText("ADM")
           
-            tela_Principal.show()
-            login.hide()
+            telaPrincipal_widget.show()
+            login_widget.hide()
         else:
-            login.hide()
-            Logon.login_Padrao(tela_Principal, login)
+            login_widget.hide()
+            Logon.login_Padrao(telaPrincipal_widget, login)
 
             
  
@@ -51,8 +51,8 @@ class Logon():
 
 
 class mainw():
-    def sair (tela_Principal,login):
+    def sair (telaPrincipal_widget,login):
         login.show()
         Logon.inicializar_login(login)
-        tela_Principal.hide()
+        telaPrincipal_widget.hide()
     

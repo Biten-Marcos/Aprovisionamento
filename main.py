@@ -1,15 +1,20 @@
 #importando formularios=====================================================================
 from PyQt5 import uic,QtWidgets
-
-app=QtWidgets.QApplication([])
-login = uic.loadUi(r"C:\Users\6501510\OneDrive - Sotreq\Documents\SISTEMA DE CONFERÊNCIA DE PEÇAS\INTERFACES\login.ui")
-
-tela_Principal = uic.loadUi(r"C:\Users\6501510\OneDrive - Sotreq\Documents\SISTEMA DE CONFERÊNCIA DE PEÇAS\INTERFACES\tela_principal.ui")
-#===========================================================================================
-
 import sys
 from MODULOS.funcoes import Logon, mainw
+from INTERFACES.login import Ui_Login
+from INTERFACES.telaPrincipal import Ui_MainWindow
+app=QtWidgets.QApplication([])
 
+
+#===========================================================================================
+login_widget = QtWidgets.QWidget()  # Criando o QWidget
+login = Ui_Login()                  # Instanciando a classe Ui_Login
+login.setupUi(login_widget)         # Configurando a interface no QWidget
+
+telaPrincipal_widget = QtWidgets.QMainWindow()  # Usando QMainWindow ao invés de QWidget
+telaPrincipal = Ui_MainWindow()
+telaPrincipal.setupUi(telaPrincipal_widget)         # Configurando a interface no QWidget
 #funções====================================================================================
 
 
@@ -19,15 +24,15 @@ from MODULOS.funcoes import Logon, mainw
     
 #============================================================================================
 
-login.pushButton.clicked.connect(lambda:Logon.adm1(tela_Principal, login))
+login.pushButton.clicked.connect(lambda:Logon.adm1(telaPrincipal, telaPrincipal_widget, login, login_widget))
 
 
 
-tela_Principal.pushButton_5.clicked.connect(lambda:mainw.sair(tela_Principal, login))
+telaPrincipal.pushButton_5.clicked.connect(lambda:mainw.sair(telaPrincipal, login))
 
 
 
-login.show()
+login_widget.show()      
 Logon.inicializar_login(login)
 app.exec()
 
