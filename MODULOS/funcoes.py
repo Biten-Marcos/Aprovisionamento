@@ -25,8 +25,13 @@ class Logon():
     
     def login_Padrao(telaPrincipal_widget, telaPrincipal):
         telaPrincipal_widget.show()
+        Logon.mudando_nome(telaPrincipal)
         telaPrincipal.pushButton_4.setVisible(False)
         
+    def mudando_nome(telaPrincipal):
+        telaPrincipal.label_4.setText("")
+        telaPrincipal.label_5.setText("")
+        telaPrincipal.label_6.setText("")
 
 
 
