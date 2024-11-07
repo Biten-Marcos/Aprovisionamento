@@ -5,6 +5,7 @@
 # tipo de perfil, INTEGER
 import sqlite3
 from MODULOS.funcoes import Logon
+from PyQt5.QtWidgets import QMessageBox
 
 #CRIAR BANCO DE DADOS+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 class sqlite_db:
@@ -66,7 +67,8 @@ class sqlite_db:
         elif Perfil == "Padrão":
             Logon.login_Padrao(Nome, Matricula, Função, telaPrincipal, telaPrincipal_widget, login_widget)
             
-    
+    def nao_localizado():
+        QMessageBox.warning(QMessageBox(),"Falha de conexão", "Usuário não localizado!")
             
 
     
@@ -98,10 +100,8 @@ class sqlite_db:
                         Matricula = coluna[2].upper()
                         Função = "Aprovisionador"
                         sqlite_db.ver_Perfil(Perfil, Nome, Matricula, Função, telaPrincipal, telaPrincipal_widget, login_widget)
-                continue
-            return "Sem acesso"
         except:
-            pass
+              sqlite_db.nao_localizado()
 
 
 
