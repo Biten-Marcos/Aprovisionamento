@@ -879,6 +879,144 @@ class Ui_MainWindow(object):
         self.horizontalLayout_28.addWidget(self.label_49)
         self.gridLayout_5.addLayout(self.horizontalLayout_28, 7, 0, 1, 1)
         self.stackedWidget.addWidget(self.pg_CadastroUser)
+        self.pg_Config = QtWidgets.QWidget()
+        self.pg_Config.setObjectName("pg_Config")
+        self.gridLayout_8 = QtWidgets.QGridLayout(self.pg_Config)
+        self.gridLayout_8.setObjectName("gridLayout_8")
+        self.horizontalLayout_18 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_18.setObjectName("horizontalLayout_18")
+        self.label_32 = QtWidgets.QLabel(self.pg_Config)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label_32.sizePolicy().hasHeightForWidth())
+        self.label_32.setSizePolicy(sizePolicy)
+        self.label_32.setMinimumSize(QtCore.QSize(0, 0))
+        self.label_32.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.label_32.setObjectName("label_32")
+        self.horizontalLayout_18.addWidget(self.label_32)
+        self.pushButton_12 = QtWidgets.QPushButton(self.pg_Config)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton_12.sizePolicy().hasHeightForWidth())
+        self.pushButton_12.setSizePolicy(sizePolicy)
+        self.pushButton_12.setStyleSheet("QPushButton {\n"
+"     background-color: #434142;       /* Cor ao passar o mouse */\n"
+"    color:#FCCD04;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"       /* Cor ao passar o mouse */\n"
+"    background-color: rgb(213, 213, 213);\n"
+"color:#000000\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #d5d5d5;       /* Cor ao pressionar o botão */\n"
+"}\n"
+"")
+        self.pushButton_12.setObjectName("pushButton_12")
+        self.horizontalLayout_18.addWidget(self.pushButton_12)
+        self.gridLayout_8.addLayout(self.horizontalLayout_18, 7, 0, 1, 1)
+        self.label_30 = QtWidgets.QLabel(self.pg_Config)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label_30.sizePolicy().hasHeightForWidth())
+        self.label_30.setSizePolicy(sizePolicy)
+        self.label_30.setObjectName("label_30")
+        self.gridLayout_8.addWidget(self.label_30, 0, 0, 1, 2)
+        self.horizontalLayout_17 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_17.setObjectName("horizontalLayout_17")
+        self.comboBox_2 = QtWidgets.QComboBox(self.pg_Config)
+        self.comboBox_2.setStyleSheet("\n"
+"background-color: rgb(255, 255, 255);")
+        self.comboBox_2.setObjectName("comboBox_2")
+        self.horizontalLayout_17.addWidget(self.comboBox_2)
+        self.pushButton_11 = QtWidgets.QPushButton(self.pg_Config)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton_11.sizePolicy().hasHeightForWidth())
+        self.pushButton_11.setSizePolicy(sizePolicy)
+        self.pushButton_11.setStyleSheet("QPushButton {\n"
+"     background-color: #434142;       /* Cor ao passar o mouse */\n"
+"    color:#FCCD04;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"       /* Cor ao passar o mouse */\n"
+"    background-color: rgb(213, 213, 213);\n"
+"color:#000000\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #d5d5d5;       /* Cor ao pressionar o botão */\n"
+"}\n"
+"")
+        self.pushButton_11.setObjectName("pushButton_11")
+        self.horizontalLayout_17.addWidget(self.pushButton_11)
+        self.gridLayout_8.addLayout(self.horizontalLayout_17, 1, 0, 1, 2)
+        spacerItem8 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout_8.addItem(spacerItem8, 2, 0, 1, 1)
+        self.horizontalLayout_16 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_16.setObjectName("horizontalLayout_16")
+        self.label_7 = QtWidgets.QLabel(self.pg_Config)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Preferred)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label_7.sizePolicy().hasHeightForWidth())
+        self.label_7.setSizePolicy(sizePolicy)
+        self.label_7.setMinimumSize(QtCore.QSize(0, 0))
+        self.label_7.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.label_7.setObjectName("label_7")
+        self.horizontalLayout_16.addWidget(self.label_7)
+        self.pushButton = QtWidgets.QPushButton(self.pg_Config)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton.sizePolicy().hasHeightForWidth())
+        self.pushButton.setSizePolicy(sizePolicy)
+        self.pushButton.setStyleSheet("QPushButton {\n"
+"     background-color: #434142;       /* Cor ao passar o mouse */\n"
+"    color:#FCCD04;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"       /* Cor ao passar o mouse */\n"
+"    background-color: rgb(213, 213, 213);\n"
+"color:#000000\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #d5d5d5;       /* Cor ao pressionar o botão */\n"
+"}\n"
+"")
+        self.pushButton.setObjectName("pushButton")
+        self.horizontalLayout_16.addWidget(self.pushButton)
+        self.gridLayout_8.addLayout(self.horizontalLayout_16, 4, 0, 1, 1)
+        self.label_31 = QtWidgets.QLabel(self.pg_Config)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label_31.sizePolicy().hasHeightForWidth())
+        self.label_31.setSizePolicy(sizePolicy)
+        self.label_31.setObjectName("label_31")
+        self.gridLayout_8.addWidget(self.label_31, 6, 0, 1, 1)
+        spacerItem9 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout_8.addItem(spacerItem9, 5, 0, 1, 1)
+        self.label_29 = QtWidgets.QLabel(self.pg_Config)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label_29.sizePolicy().hasHeightForWidth())
+        self.label_29.setSizePolicy(sizePolicy)
+        self.label_29.setObjectName("label_29")
+        self.gridLayout_8.addWidget(self.label_29, 3, 0, 1, 2)
+        spacerItem10 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
+        self.gridLayout_8.addItem(spacerItem10, 8, 0, 1, 1)
+        self.stackedWidget.addWidget(self.pg_Config)
         self.horizontalLayout_9.addWidget(self.stackedWidget)
         self.gridLayout.addLayout(self.horizontalLayout_9, 1, 0, 1, 1)
         MainWindow.setCentralWidget(self.centralwidget)
@@ -887,7 +1025,7 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget.setCurrentIndex(3)
+        self.stackedWidget.setCurrentIndex(4)
         self.tabWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
@@ -915,7 +1053,7 @@ class Ui_MainWindow(object):
         self.label_6.setText(_translate("MainWindow", "FUNÇÃO"))
         self.pushButton_8.setText(_translate("MainWindow", "Ordem de Serviço"))
         self.pushButton_3.setText(_translate("MainWindow", "Cadastro de colaborador"))
-        self.pushButton_2.setText(_translate("MainWindow", "Importação / Exportação"))
+        self.pushButton_2.setText(_translate("MainWindow", "Configurações"))
         self.pushButton_4.setText(_translate("MainWindow", "Cadastrar usuário"))
         self.pushButton_5.setText(_translate("MainWindow", "Sair"))
         self.pushButton_16.setText(_translate("MainWindow", "SOTREQ CAT"))
@@ -962,3 +1100,11 @@ class Ui_MainWindow(object):
         self.pushButton_14.setText(_translate("MainWindow", "CADASTRAR"))
         self.label_8.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:18pt; color:#fccd04;\">CADASTRAR USUÁRIO</span></p></body></html>"))
         self.pushButton_20.setText(_translate("MainWindow", "LIMPAR"))
+        self.label_32.setText(_translate("MainWindow", "TextLabel"))
+        self.pushButton_12.setText(_translate("MainWindow", "Exportar"))
+        self.label_30.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:18pt; color:#fccd04;\">Selecionar Reforma</span></p></body></html>"))
+        self.pushButton_11.setText(_translate("MainWindow", "Selecionar"))
+        self.label_7.setText(_translate("MainWindow", "TextLabel"))
+        self.pushButton.setText(_translate("MainWindow", "Importar"))
+        self.label_31.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:18pt; color:#fccd04;\">Exportar Banco de Dados</span></p></body></html>"))
+        self.label_29.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:18pt; color:#fccd04;\">Importar Banco de Dados</span></p></body></html>"))

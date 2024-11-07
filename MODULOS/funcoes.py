@@ -26,46 +26,30 @@ class mainw():
     def cadastroUser(telaPrincipal, CadastroUser):
         telaPrincipal.stackedWidget.setCurrentWidget(CadastroUser)
 
+    def config(telaPrincipal, Config):
+        telaPrincipal.stackedWidget.setCurrentWidget(Config)
+
 class Logon():
     
     def inicializar_login(login):
         login.lineEdit.setText("")
-        login.lineEdit_2.setText("")
-  
+        login.lineEdit_2.setText("")        
 
-
-    
-    def login_Padrao(telaPrincipal_widget, telaPrincipal):
-        telaPrincipal_widget.show()
-        Logon.mudando_nome(telaPrincipal)
+    def login_Padrao(Nome, Matricula, Função, telaPrincipal, telaPrincipal_widget, login_widget):
+        telaPrincipal.label_4.setText(Nome)
+        telaPrincipal.label_5.setText(Matricula)
+        telaPrincipal.label_6.setText(Função)
         telaPrincipal.pushButton_4.setVisible(False)
-        
-    def mudando_nome(telaPrincipal):
-        telaPrincipal.label_4.setText("")
-        telaPrincipal.label_5.setText("")
-        telaPrincipal.label_6.setText("")
+        telaPrincipal_widget.show()
+        login_widget.hide()
 
-
-
-
-    def adm1 (telaPrincipal, telaPrincipal_widget, login, login_widget):
-        adm = "adm"
-        admsen = "adm"
-        
-        user = login.lineEdit.text()
-        senha = login.lineEdit_2.text()
-        if user == adm and senha == admsen:
-            
+    def login_Adm (telaPrincipal, telaPrincipal_widget, login_widget):
             telaPrincipal.label_4.setText("ADM")
             telaPrincipal.label_5.setText("ADM")
             telaPrincipal.label_6.setText("ADM")
-          
+            telaPrincipal.pushButton_4.setVisible(True)
             telaPrincipal_widget.show()
-            
             login_widget.hide()
-        else:
-            login_widget.hide()
-            Logon.login_Padrao(telaPrincipal_widget, telaPrincipal)
 
             
  

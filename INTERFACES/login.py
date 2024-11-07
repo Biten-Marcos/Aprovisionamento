@@ -14,7 +14,8 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Login(object):
     def setupUi(self, Login):
         Login.setObjectName("Login")
-        Login.resize(293, 383)
+        Login.resize(283, 383)
+        Login.setMaximumSize(QtCore.QSize(283, 16777215))
         Login.setStyleSheet("background-color: rgb(255, 194, 43);\n"
 "background-color: rgb(252, 205, 4);\n"
 "background-color: rgb(252, 205, 4);")
