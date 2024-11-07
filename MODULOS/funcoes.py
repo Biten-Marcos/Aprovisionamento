@@ -14,6 +14,18 @@ class mainw():
         login_widget.show()
         Logon.inicializar_login(login)
 
+    def tabela(telaPrincipal,tabela):
+        telaPrincipal.stackedWidget.setCurrentWidget(tabela)
+
+    def logo(telaPrincipal,logo):
+        telaPrincipal.stackedWidget.setCurrentWidget(logo)
+    
+    def cadastroColab(telaPrincipal,cadastroColab):
+        telaPrincipal.stackedWidget.setCurrentWidget(cadastroColab)
+        
+    def cadastroUser(telaPrincipal, CadastroUser):
+        telaPrincipal.stackedWidget.setCurrentWidget(CadastroUser)
+
 class Logon():
     
     def inicializar_login(login):
@@ -49,6 +61,7 @@ class Logon():
             telaPrincipal.label_6.setText("ADM")
           
             telaPrincipal_widget.show()
+            
             login_widget.hide()
         else:
             login_widget.hide()

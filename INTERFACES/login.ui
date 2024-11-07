@@ -141,7 +141,21 @@ background-color: rgb(252, 205, 4);</string>
           </font>
          </property>
          <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);</string>
+          <string notr="true">QPushButton {
+     background-color: #434142;       /* Cor ao passar o mouse */
+	color:#FCCD04;
+}
+
+QPushButton:hover {
+       /* Cor ao passar o mouse */
+	background-color: rgb(213, 213, 213);
+color:#000000
+}
+
+QPushButton:pressed {
+    background-color: #d5d5d5;       /* Cor ao pressionar o botão */
+}
+</string>
          </property>
          <property name="text">
           <string>Entrar</string>

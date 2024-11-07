@@ -88,7 +88,21 @@ class Ui_Login(object):
         font.setBold(True)
         font.setWeight(75)
         self.pushButton.setFont(font)
-        self.pushButton.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.pushButton.setStyleSheet("QPushButton {\n"
+"     background-color: #434142;       /* Cor ao passar o mouse */\n"
+"    color:#FCCD04;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"       /* Cor ao passar o mouse */\n"
+"    background-color: rgb(213, 213, 213);\n"
+"color:#000000\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #d5d5d5;       /* Cor ao pressionar o botão */\n"
+"}\n"
+"")
         self.pushButton.setObjectName("pushButton")
         self.horizontalLayout.addWidget(self.pushButton)
         self.label_4 = QtWidgets.QLabel(Login)
