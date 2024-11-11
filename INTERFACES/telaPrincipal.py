@@ -790,6 +790,7 @@ class Ui_MainWindow(object):
         self.comboBox.setObjectName("comboBox")
         self.comboBox.addItem("")
         self.comboBox.addItem("")
+        self.comboBox.addItem("")
         self.horizontalLayout_7.addWidget(self.comboBox)
         self.gridLayout_5.addLayout(self.horizontalLayout_7, 5, 0, 1, 1)
         self.horizontalLayout_3 = QtWidgets.QHBoxLayout()
@@ -1025,7 +1026,7 @@ class Ui_MainWindow(object):
         MainWindow.setStatusBar(self.statusbar)
 
         self.retranslateUi(MainWindow)
-        self.stackedWidget.setCurrentIndex(4)
+        self.stackedWidget.setCurrentIndex(3)
         self.tabWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
@@ -1096,7 +1097,8 @@ class Ui_MainWindow(object):
         self.label_9.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#fccd04;\">NOME:</span></p></body></html>"))
         self.label_16.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" color:#fccd04;\">Tipo de Perfil:</span></p></body></html>"))
         self.comboBox.setItemText(0, _translate("MainWindow", "Usuário"))
-        self.comboBox.setItemText(1, _translate("MainWindow", "Administrador"))
+        self.comboBox.setItemText(1, _translate("MainWindow", "Leitor"))
+        self.comboBox.setItemText(2, _translate("MainWindow", "Administrador"))
         self.pushButton_14.setText(_translate("MainWindow", "CADASTRAR"))
         self.label_8.setText(_translate("MainWindow", "<html><head/><body><p align=\"center\"><span style=\" font-size:18pt; color:#fccd04;\">CADASTRAR USUÁRIO</span></p></body></html>"))
         self.pushButton_20.setText(_translate("MainWindow", "LIMPAR"))

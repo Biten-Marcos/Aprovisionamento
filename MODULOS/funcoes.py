@@ -6,7 +6,9 @@ import sys
 app=QtWidgets.QApplication([])
 
 #===========================================================================================
-
+class inicial():
+    def __init__():
+        print("inicio")
 class mainw():
 
     def sair(telaPrincipal_widget, login, login_widget):

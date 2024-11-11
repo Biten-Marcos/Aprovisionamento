@@ -4,7 +4,7 @@ import sys
 from MODULOS.funcoes import Logon, mainw
 from INTERFACES.login import Ui_Login
 from INTERFACES.telaPrincipal import Ui_MainWindow
-from MODULOS.cadastrar import  cadastrar
+from MODULOS .cadastrar import  cadastrar
 from DB.query import sqlite_db
 app=QtWidgets.QApplication([])
 
@@ -30,7 +30,7 @@ Config = telaPrincipal.pg_Config
 #============================================================================================
 
 #login.pushButton.clicked.connect(lambda:Logon.adm1(telaPrincipal, telaPrincipal_widget, login, login_widget))
-sqlite_instance = sqlite_db()
+#sqlite_instance = sqlite_db()
 #login.pushButton.clicked.connect(lambda:sqlite_instance.captura_login(login))
 login.pushButton.clicked.connect(lambda:sqlite_db.captura_login(login, telaPrincipal, telaPrincipal_widget, login_widget))
 

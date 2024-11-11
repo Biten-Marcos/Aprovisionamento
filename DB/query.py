@@ -14,8 +14,8 @@ class sqlite_db:
     def __init__(self,banco=None): 
         self.conn = None
         self.cursor = None
-
-        if banco:
+        print(banco)
+        if banco: 
             self.open(banco)
 
     def open(self, banco):
@@ -76,14 +76,11 @@ class sqlite_db:
     def check_user(self, usu, senh, telaPrincipal, telaPrincipal_widget, login_widget):
         
         try:
-            print ("try")
+            print("Iniciando conexão com o banco de dados...")
             cur = db.cursor
-            cur.execute("""
-             
-                SELECT * FROM USUARIOS;
-            
-            """)
-            
+            print("Cursor inicializado, executando consulta SQL...")
+            cur.execute("SELECT * FROM USUARIOS;")
+            print("Consulta executada com sucesso.")
             for coluna in cur.fetchall():
                 #if coluna[2].upper() == usu.upper() and coluna[3].upper() == senh.upper() and coluna[4] == 0:
                 print("1")
